@@ -1,0 +1,55 @@
+********************************************************************************************** DATA TREATMENT DISCLAMER OF THE SCRIPT 'all_new' ****************************************************************************************
+
+Before using Python to treat the data, a column called 'European Region' was manually added to every country present in every record of all Natural Disaster Datasets CSV files. The Country:European Region assignment was based on the following geographycal mapping:
+
+1. Northern Europe
+Denmark
+Estonia
+Finland
+Latvia
+Lithuania
+Sweden
+
+2. Western Europe
+Austria
+Belgium
+France
+Germany
+Ireland
+Luxembourg
+Netherlands
+
+3. Southern Europe
+Croatia
+Cyprus
+Greece
+Italy
+Malta
+Portugal
+Slovenia
+Spain
+
+4. Eastern Europe
+Bulgaria
+Czech Republic
+Hungary
+Poland
+Romania
+Slovakia
+
+
+In the described data processing, data was gathered from different files, each dedicated to a specific type of natural disaster: climatological, geophysical, hydrological, and meteorological. These files are prepared to include all necessary details.
+	
+Initially, a check is performed to ensure all datasets are complete and structured similarly. After ensuring uniformity, a special marker indicating the type of disaster is added to each record. This step is crucial for understanding and separating the data based on disaster type.
+
+Subsequently, all separate pieces are combined into a single, comprehensive dataset. This consolidation allows for a unified view of all disaster types in one place. To maintain focus on European countries, records not belonging to this region are filtered out.
+
+During scrutiny, placeholders represented by "..." are encountered, used where information is missing. These are replaced with zeros for consistency and simplicity, ensuring that analysis is not misled by ambiguous data.
+
+Attention is then turned to ensuring all numerical data is indeed recognized as such. This is important for accurate calculations and analyses. All relevant data is carefully converted to numeric form, handling any irregularities that might lead to inaccuracies.
+
+To provide a clearer picture of the impact of these disasters, totals over a span of three decades (1990-2019) for occurrences, deaths, and the number of people affected are calculated. This step is instrumental in assessing the long-term implications and trends of natural disasters in Europe.
+
+In the final stages, the dataset is streamlined by selecting only the most essential information: the country, the region within Europe, the type of disaster, and the newly calculated totals for occurrences, deaths, and affected individuals.
+
+The culmination of this process is the creation of a new, refined dataset, which is made available in an Excel file. This file stands as a comprehensive resource, encapsulating the essence of the data processing steps, ready for further reporting.

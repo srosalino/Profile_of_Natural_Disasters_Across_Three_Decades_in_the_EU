@@ -1,0 +1,51 @@
+********************************************************************************************* DATA TREATMENT DISCLAMER OF THE SCRIPT 'forest_by_year' ****************************************************************************************
+
+Before using Python to treat the data, a column called 'European Region' was manually added to every country present in every record the 'Forest Area' CSV file. The Country:European Region assignment was based on the following geographycal mapping:
+
+1. Northern Europe
+Denmark
+Estonia
+Finland
+Latvia
+Lithuania
+Sweden
+
+2. Western Europe
+Austria
+Belgium
+France
+Germany
+Ireland
+Luxembourg
+Netherlands
+
+3. Southern Europe
+Croatia
+Cyprus
+Greece
+Italy
+Malta
+Portugal
+Slovenia
+Spain
+
+4. Eastern Europe
+Bulgaria
+Czech Republic
+Hungary
+Poland
+Romania
+Slovakia
+
+
+The data processing steps begin with the reading of the 'Forest Area' CSV file dataset, which contains information about forest areas across different countries and years.
+
+Initially, the dataset is filtered to include only European Union countries, ensuring the analysis focuses on this specific geographical area.
+
+Subsequently, the dataset undergoes refinement by removing unwanted columns. Only the columns representing the country and area, forest area for specific years (1990, 2000, 2010, 2015, 2020), and the European region are retained. This step simplifies the dataset to include only the most relevant information for analysis.
+
+The next significant transformation is the melting operation. This process reshapes the dataset from a wide format, where each year's forest area is in a separate column, to a long format. In this long format, there are two new columns: one for the year and another for the forest area, making the dataset easier to analyze over time. The country, area, and European region information remains unchanged, ensuring continuity and context.
+
+After melting, the year information, originally part of column headers and mixed with other text, is extracted and cleaned. Only the year portion (e.g., "1990") is retained in a new year column. This step enhances clarity and consistency in the dataset, facilitating easier analysis of forest area trends over time.
+
+The final step in the process is exporting the transformed dataset to an Excel file. This newly reshaped dataset, now organized by year and including only relevant information, becomes a ready-to-use resource for reporting on forest area changes in European Union countries over the specified years.
